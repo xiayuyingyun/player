@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>听书系统</title>
+	<meta name="keywords" content="吉方玉">
+	<meta name="content" content="吉方玉">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link type="text/css" rel="stylesheet" href="css1/login.css">
+    <script type="text/javascript" src="js1/jquery.min.js"></script>
+    <script type="text/javascript" src="js1/drag.js"></script>
+    <script>$(document).ready(function(c) {
+        $('.close').on('click', function(c){
+            $('.login-form').fadeOut('slow', function(c){
+                $('.login-form').remove();
+            });
+        });
+    });
+    </script>
+
+</head>
+<body class="login_bj" >
+<div class="zhuce_body">
+	<div class="logo">
+        <!--<a href="#"><img src="images1/logo.png" width="114" height="54" border="0"></a>-->
+    </div>
+    <div class="zhuce_kong login_kuang">
+    	<div class="zc">
+        	<div class="bj_bai">
+            <h3>登录</h3>
+       	  	  <form action="" method="get">
+                <!--<input name="" type="text" class="kuang_txt" placeholder="手机号">-->
+                <!--<input name="" type="text" class="kuang_txt" placeholder="密码">-->
+                  <input type="text" class="kuang_txt" value="username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}">
+                  <input type="password"  class="kuang_txt" value="密码" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+                  <div id="drag" style="width: 227px"></div>
+                  <script type="text/javascript">
+                      $('#drag').drag();
+                  </script>
+                  <div>
+               		<a href="#">忘记密码？</a><input name="" type="checkbox" value="" checked><span>记住我</span> 
+                </div>
+                  <a href="./index.html"><input name="登录" type="button" class="btn_zhuce" value="登录"></a>
+
+              </form>
+            </div>
+        	<div class="bj_right">
+            	<p>使用以下账号直接登录</p>
+                <a href="http://support.qq.com/login.shtml?fid=780&url=http%3A//support.qq.com/write.shtml%3Ffid%3D780%26SSTAG%3Dnull.errorcode21006" class="zhuce_qq">QQ注册</a>
+                <a href="https://passport.weibo.cn/signin/login?entry=mweibo&res=wel&wm=3349&r=http%3A%2F%2Fpad.weibo.cn%2F%3Fsudaref%3Dwww.baidu.com%26retcode%3D6102&retcode=6102" class="zhuce_wb">微博注册</a>
+                <a href="https://wx.qq.com/" class="zhuce_wx">微信注册</a>
+                <p>没有账号？<a href="./index1.html">立即注册</a></p>
+            
+            </div>
+        </div>
+
+    </div>
+
+</div>
+    
+</body>
+</html>
