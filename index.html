@@ -1,122 +1,58 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>一首会让你想起我的歌</title>
-    <meta name="author" content="XXYY" />
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <!-- Date: 2015-03-19 21:11:53-->
+	<meta charset="UTF-8">
+	<title>听书系统</title>
+	<meta name="keywords" content="吉方玉">
+	<meta name="content" content="吉方玉">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link type="text/css" rel="stylesheet" href="css1/login.css">
+    <script type="text/javascript" src="js1/jquery.min.js"></script>
+    <script type="text/javascript" src="js1/drag.js"></script>
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101140406" data-redirecturi="http://127.0.0.1" charset="utf-8"></script>
+
 </head>
-<body>
-<!-- 主要容器层 -->
-<div class="Container" id="Container">
-    <!-- 拖拽层 内容层!-->
-    <div class="con_drag" id="con_drag">
+<body class="login_bj" >
 
-        <!-- 第一页 -->
-        <div class="page_A">
-            <div class="con_padding"></div>
-
-            <div class="Con_musicList">
-                <!-- 类别 -->
-                <ul class="music_class" id="music_class"></ul>
-
-                <div class="con_catalogue" id="con_catalogue">
-                    <!-- 歌曲目录	 -->
-                    <ul class="catalogue" id="catalogue">
-                    </ul>
-
-                    <div id="con_scroll" class="con_scroll">
-                        <div id="do_scroll" class="do_scroll"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!-- 第一页 end -->
-
-        <!-- 第二页 -->
-        <div class="page_B">
-            <div class="con_padding"></div>
-            <div class="conB_lyric" id="conB_lyric">
-                <ul class="Do_lyric" id="Do_lyric">
-                    <li>会不会有首歌让你很想我</li>
-                </ul>
-            </div>
-        </div>
-        <!-- 第儿页 end!-->
-
-
+<div class="zhuce_body">
+	<div class="logo">
+        <!--<a href="#"><img src="images1/logo.png" width="114" height="54" border="0"></a>-->
     </div>
-    <!-- 拖拽层 内容层！ end!-->
+    <div class="zhuce_kong">
+    	<div class="zc">
+        	<div class="bj_bai">
+            <h3>欢迎注册</h3>
+       	  	  <form action="" method="get">
+                <input name="" type="text" class="kuang_txt phone" placeholder="手机号">
+                <input name="" type="text" class="kuang_txt email" placeholder="邮箱">
+                <input name="" type="password" class="kuang_txt possword" placeholder="密码">
 
+                  <div id="drag"></div>
+                  <script type="text/javascript">
+                      $('#drag').drag();
+                  </script>
 
-</div>
-<!-- 主要容器层 end-->
-
-<!-- 播放器组件层 -->
-<div class="Con_music" id="Con_music">
-
-    <!-- 时间轴 -->
-    <div class="con_offset">
-        <div class="do_offset"></div>
-    </div>
-    <!-- 时间轴 end!-->
-
-    <div class="singer_container">
-        <!-- 名称，图片，时间 -->
-        <div class="singer_con">
-            <img src="./images/singer/singer1.jpg" class="singer_img">
-            <h3 class="song_name">周华健----朋友</h3>
-            <p>
-                <strong class="over_time">00:00</strong>
-                <span>|</span>
-                <strong class="all_time">00:00</strong>
-            </p>
-        </div>
-
-        <!-- 音量和循环模式 -->
-        <div class="voice_container">
-            <div class="con_voice">
-                <span class="icon_audio" id="icon_audio"></span>
-                <div class="all_voice">
-                    <div class="now_voice"></div>
+                <div>
+               		<input name="" type="checkbox" value=""><span>已阅读并同意<a href="#" target="_blank"><span class="lan">《XXXXX使用协议》</span></a></span>
                 </div>
+                  <a href="./login.html"><input name="注册" type="button" class="btn_zhuce" value="注册"></a>
+                
+                </form>
             </div>
-
-            <div class="con_lyric">
-                <span class="icon_repeat" id="PlayMode"></span>
-                <strong id="lyric_on_off">歌词</strong>
+        	<div class="bj_right">
+            	<p>使用以下账号直接登录</p>
+                <a href="http://support.qq.com/login.shtml?fid=780&url=http%3A//support.qq.com/write.shtml%3Ffid%3D780%26SSTAG%3Dnull.errorcode21006" class="zhuce_qq">QQ注册</a>
+                <a href="https://passport.weibo.cn/signin/login?entry=mweibo&res=wel&wm=3349&r=http%3A%2F%2Fpad.weibo.cn%2F%3Fsudaref%3Dwww.baidu.com%26retcode%3D6102&retcode=6102" class="zhuce_wb">微博注册</a>
+                <a href="https://wx.qq.com/" class="zhuce_wx">微信注册</a>
+                <p>已有账号？<a href="login.html">立即登录</a></p>
+            
             </div>
         </div>
 
-        <!-- 操作 -->
-        <div class="Music_do">
-            <span class="icon_pre"></span>
-            <span class="icon_play" id="Play"></span>
-            <span class="icon_next"></span>
-        </div>
     </div>
 
 </div>
-<!-- 播放器组件层 end!-->
-
-
-<!-- 黑色遮罩层 -->
-<div class="body_padding"></div>
-<!-- 黑色遮罩层 end!-->
-
-<audio id="Audio">
-    <source src="" type="audio/mpeg">
-</audio>
-
-<script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="./js/data.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
-<script type="text/javascript" src="./js/show.js"></script>
+    
 
 </body>
 </html>
-
